@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QLabel>
+#include "highlighter.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,6 +31,8 @@ private:
     const QString API_URL = "https://api.openai.com/v1/";
 
     QString sendGptRequest(const QString& prompt, const int maxTokens, const int n);
+
+    Highlighter hl2{};
 
 };
 #endif // MAINWINDOW_H

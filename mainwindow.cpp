@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    hl2.setDocument(ui->tb_session->document());
 }
 
 
